@@ -19,7 +19,7 @@ function Dice() {
     var randomVal1 = Math.floor(Math.random()*6+1);  //this for the random numbers between 1 and 6
     var randomVal2 = Math.floor(Math.random()*6+1);
     
-    counter++;
+    
     console.log("este es 1: "+counter)
     document.querySelector('.total').innerHTML = counter;
    
@@ -88,6 +88,7 @@ function Dice() {
     if ((randomVal1 == 6) && (randomVal2 == 6))
     {
         document.querySelector('h3').innerHTML = "You win: Try Again!";
+        counter++;
         
     }
 
@@ -113,4 +114,3 @@ function Dice() {
 // setInterval(myFunc, 1000);
 }
 
-;
